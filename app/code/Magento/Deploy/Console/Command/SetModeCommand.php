@@ -95,7 +95,8 @@ class SetModeCommand extends Command
                     break;
                 case State::MODE_PRODUCTION:
                     if ($skipCompilation) {
-                        $modeController->enableProductionModeMinimal();
+                       # $modeController->enableProductionModeMinimal();
+                         echo "skip";
                     } else {
                         $modeController->enableProductionMode();
                     }
